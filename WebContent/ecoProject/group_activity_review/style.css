@@ -1,0 +1,19 @@
+
+body {height:2000px}
+.box {background:blue; height:200px; width:200px;margin:0 auto;}
+.box:nth-child(odd) {background:red;}
+.box:first-child {background:purple;}
+.pagination {text-align:center;}
+.infinite {
+  counter-reset: section;
+}
+.list {
+  text-align:center;
+}
+.list:before {
+  counter-increment: section;
+  content: counter(section);  
+  color:black;
+ margin:0 auto;
+  font-size: 40px;
+}
